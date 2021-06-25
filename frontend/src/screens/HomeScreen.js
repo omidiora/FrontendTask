@@ -79,7 +79,7 @@ const HomeScreen = () => {
       </div>
       
       <div className="homescreen__products">
-        {loading ? (
+        {/* {loading ? (
           <h2>Loading...</h2>
         ) : error ? (
           <h2>{error}</h2>
@@ -94,7 +94,7 @@ const HomeScreen = () => {
               productId={product._id}
             />
           ))
-        )}
+        )} */}
       </div>
     </div>
   );
