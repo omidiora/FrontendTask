@@ -1,4 +1,4 @@
-const products = [
+ const products = [
   {
     _id:1,
     name: "PlayStation 5",
@@ -60,4 +60,5 @@ const products = [
   },
 ];
 
-module.exports = products;
+export default products;
+
