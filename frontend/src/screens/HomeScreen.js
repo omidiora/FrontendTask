@@ -48,7 +48,7 @@ const HomeScreen = () => {
   
   useEffect(() => {
     dispatch(listProducts());
-  }, [dispatch]);
+  }, [dispatch , products]);
 
   return (
     <div className="homescreen">
