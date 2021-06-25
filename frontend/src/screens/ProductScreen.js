@@ -26,11 +26,7 @@ const ProductScreen = ({ match, history }) => {
 
   return (
     <div className="productscreen">
-      {loading ? (
-        <h2>Loading...</h2>
-      ) : error ? (
-        <h2>{error}</h2>
-      ) : (
+      
         <>
           <div className="">
             <div className="info">
@@ -93,7 +89,7 @@ const ProductScreen = ({ match, history }) => {
             </div>
           </div> */}
         </>
-      )}
+   
     </div>
   );
 };
