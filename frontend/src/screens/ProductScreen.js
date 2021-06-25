@@ -5,13 +5,14 @@ import { useSelector, useDispatch } from "react-redux";
 // Actions
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
+import product from '../components/data/products'
 
 const ProductScreen = ({ match, history }) => {
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
 
   const productDetails = useSelector((state) => state.getProductDetails);
-  const { loading, error, product } = productDetails;
+  // const { loading, error, product } = productDetails;
 
   useEffect(() => {
     if (product && match.params.id !== product._id) {
