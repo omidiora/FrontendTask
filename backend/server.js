@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === "production") {
     response.sendFile(path.join(__dirname, "build", "index.html"));
   });
 }
-app.use("/api/products", productRoutes);
+app.get("/api/products", productRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
