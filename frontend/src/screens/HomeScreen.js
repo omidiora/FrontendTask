@@ -11,6 +11,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import SaveIcon from '@material-ui/icons/Save';
+import products from '../components/data/products'
 
 // Components
 import Product from "../components/Product";
@@ -41,7 +42,7 @@ const HomeScreen = () => {
 
   const getProducts = useSelector((state) => state.getProducts);
 
-  const { products=[], loading, error } = getProducts;
+  const { loading, error } = getProducts;
   console.log(products, 'product');
 
   
